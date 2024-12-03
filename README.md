@@ -1,1 +1,1 @@
-# https//Leppai.github.io/sistem-cerdas-pti/
+# https://Leppai.github.io/sistem-cerdas-pti/
