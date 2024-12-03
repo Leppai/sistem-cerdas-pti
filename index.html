@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas PTI Sistem Cerdas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="template.css"> <!-- Note: Corrected from 'tamplate.css' to 'template.css' -->
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-4">
+        <h1>File Jurnal</h1>
+    </header>
+
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">IF24B Kelompok 1</h5>
+            <p class="card-text">
+                Anggota Kelompok:<br>
+                - Andika Dwi Ilyasa (24416255201254)<br>
+                - Andika Khoir Rijal (24416255201047)<br>
+                - Delia Rahmasari (24416255201041)<br>
+                - Elvina Farissa Budiputri (24416255201034)<br>
+                - Kaisha Kamila Puspito (24416255201028)<br>
+                - Muhammad Abimanyu Ardha Nugroho (24416255201107)<br>
+                - Muhammad Vicky (24416255201039)<br>
+                - Najmi Shauky Kamil (24416255201031)<br>
+                - Sandy (24416255201014)<br>
+                - Syahlevi Fazli Nugraha (24416255201013)<br>
+                - Taufik Kalami (24416255201245)
+            </p>
+        </div>
+    </div>
+
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-md-12 mb-4">
+                <iframe src="Jurnal 1.pdf" class="w-100" height="600" style="border: none;"></iframe>
+            </div>
+            <div class="col-md-12 mb-4">
+                <iframe src="Jurnal 2.pdf" class="w-100" height="600" style="border: none;"></iframe>
+            </div>
+            <div class="col-md-12 mb-4">
+                <iframe src="Jurnal 3.pdf" class="w-100" height="600" style="border: none;"></iframe>
+            </div>
+            <div class="col-md-12 mb-4">
+                <iframe src="Jurnal 4.pdf" class="w-100" height="600" style="border: none;"></iframe>
+            </div>
+            <div class="col-md-12 mb-4">
+                <iframe src="Jurnal 5.pdf" class="w-100" height="600" style="border: none;"></iframe>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Kesimpulan Sistem Prediksi Cuaca</h5>
+                <p class="card-text">
+                    Metode Fuzzy Logic, Case-Based Reasoning (CBR), dan Bayesian Network dianggap paling cocok berdasarkan analisis karena alasan berikut yang relevan dengan temuan dalam jurnal-jurnal tersebut:
+                </p>
+                <hr>
+                <h6>1. Fuzzy Logic</h6>
+                <p>
+                    <strong>Alasan Kecocokan:</strong><br>
+                    1. Kemampuan Menangani Ketidakpastian:<br>
+                    - Prediksi cuaca sering melibatkan data yang tidak pasti dan parameter dengan nilai ambigu, seperti kelembapan "tinggi", suhu "hangat", atau tekanan udara "rendah". Fuzzy Logic mampu merepresentasikan data ini dengan himpunan kabur, sehingga cocok untuk memodelkan fenomena cuaca yang kompleks.<br>
+                    - Dalam salah satu jurnal, Fuzzy Logic menunjukkan kemampuan akurasi hingga 90% dalam memprediksi kondisi cuaca pada data historis dengan tingkat ketidakpastian tinggi.<br>
+                    2. Kemudahan Interpretasi Linguistik:<br>
+                    - Fuzzy Logic memungkinkan penggunaan aturan berbasis linguistik, seperti "Jika suhu tinggi dan kelembapan rendah, maka cuaca cerah." Hal ini memudahkan interpretasi oleh pengguna non-teknis.<br>
+                    3. Fleksibilitas dan Generalisasi:<br>
+                    - Sistem berbasis Fuzzy Logic dapat dengan mudah disesuaikan dengan dataset baru tanpa perlu rekonstruksi besar-besaran. Hal ini memungkinkan sistem tetap relevan meskipun pola cuaca berubah akibat dinamika lingkungan.
+                </p>
+                <hr>
+                <h6>2. Case-Based Reasoning (CBR)</h6>
+                <p>
+                    <strong>Alasan Kecocokan:</strong><br>
+                    1. Penggunaan Data Historis:<br>
+                    - CBR memanfaatkan data kasus sebelumnya untuk memprediksi atau menyelesaikan kasus baru. Dalam konteks cuaca, pola cuaca saat ini sering kali memiliki kesamaan dengan pola cuaca dari waktu sebelumnya, sehingga prediksi dapat dibuat berdasarkan informasi historis.<br>
+                    2. Kesederhanaan dan Keefektifan:<br>
+                    - Metode ini memungkinkan solusi cepat dengan mencari kemiripan dari data historis tanpa perlu membangun model prediksi yang kompleks. Ini sangat efektif untuk pola cuaca yang konsisten.<br>
+                    3. Implementasi dengan Fuzzy k-Nearest Neighbor:<br>
+                    - Kombinasi CBR dengan metode fuzzy k-Nearest Neighbor (FKNN) meningkatkan akurasi dengan memperhitungkan derajat keanggotaan (membership degree) terhadap setiap kelompok data historis, sehingga memprediksi cuaca dengan lebih fleksibel dan akurat.<br>
+                    4. Kemampuan Adaptasi:<br>
+                    - CBR memiliki proses retain, di mana sistem dapat menyimpan solusi baru yang ditemukan ke dalam basis data untuk digunakan di masa mendatang. Hal ini membuat sistem mampu beradaptasi dan terus belajar dari data baru yang masuk.
+                </p>
+                <h6>3. Bayesian Network</h6>
+                <p>
+                    <strong>Alasan Kecocokan:</strong><br>
+                    1. Kemampuan Mengintegrasikan Data Spatio-Temporal:<br>
+                    - Cuaca dipengaruhi oleh faktor spatial (lokasi geografis) dan temporal (waktu). Bayesian Network memungkinkan pengintegrasian kedua jenis data ini dengan memanfaatkan nilai peluang bersyarat antara berbagai stasiun pengukuran.<br>
+                    2. Representasi Ketergantungan antara Variabel:<br>
+                    - Cuaca adalah sistem kompleks dengan banyak variabel saling bergantung, seperti suhu, tekanan udara, dan kelembapan. Dengan Bayesian Network, ketergantungan ini dapat direpresentasikan dalam bentuk graf arah berarah (DAG), sehingga probabilitas suatu kejadian (misalnya, hujan) dapat dihitung berdasarkan probabilitas variabel terkait.<br>
+                    3. Efisiensi dalam Penanganan Ketidakpastian:<br>
+                    - Ketidakpastian adalah karakteristik bawaan dari sistem cuaca, dan Bayesian Network dirancang untuk menangani data yang tidak lengkap atau tidak pasti.<br>
+                    - Dalam pemodelan cuaca, data tidak selalu tersedia dari semua stasiun, tetapi Bayesian Network dapat tetap menghasilkan estimasi peluang dengan memperhitungkan data yang ada.
+                </p>
+            </div>
+        </div>
